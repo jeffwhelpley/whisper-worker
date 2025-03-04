@@ -1,0 +1,6 @@
+name = "whisper-worker"
+main = "src/index.ts"
+compatibility_date = "2025-03-04"
+
+[ai]
+binding = "AI"

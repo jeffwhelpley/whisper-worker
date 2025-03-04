@@ -1,0 +1,14 @@
+{
+  "name": "whisper-worker",
+  "version": "0.0.0",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20250303.0",
+    "typescript": "^5.8.2",
+    "wrangler": "3.112.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "wrangler dev",
+    "deploy": "wrangler deploy"
+  }
+}
