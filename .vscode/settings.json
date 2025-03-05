@@ -1,0 +1,238 @@
+{
+    "editor.fontSize": 14,
+    "editor.fontWeight": "300",
+    "editor.lineHeight": 1.5,
+    // "editor.fontFamily": "DM Mono, monospace",
+    // "editor.fontFamily": "'Monaspace Neon', monospace",
+    "editor.fontFamily": "'Dank Mono', monospace",
+    // "editor.inlineSuggest.fontFamily": "'Dank Mono', monospace",
+    // "editor.fontLigatures": true,
+    // "editor.fontFamily": "'MonoLisa Nerd Font Mono', monospace",
+    // "editor.inlineSuggest.fontFamily": "'Monaspace Krypton', monospace",
+    // "editor.fontFamily": "Cascadia Code PL, Menlo, Monaco, 'Courier New', monospace",
+    "editor.fontLigatures": "'calt', 'liga', 'dlig', 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08'",
+    // make the editor not show the debugger near the line numbers
+    // "editor.glyphMargin": false,
+    "editor.lineNumbers": "interval",
+    "editor.quickSuggestionsDelay": 0,
+    "editor.inlineSuggest.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "editor.foldingImportsByDefault": false,
+    "editor.suggest.snippetsPreventQuickSuggestions": false,
+    "editor.accessibilitySupport": "off",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.smoothScrolling": true,
+    "explorer.confirmDelete": false,
+    "workbench.list.smoothScrolling": true,
+    "editor.linkedEditing": true,
+    "editor.minimap.renderCharacters": false,
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    // FILES
+    "files.autoSave": "onWindowChange",
+    // ANGULAR
+    "angular.forceStrictTemplates": true,
+    // TYPESCRIPT
+    // "typescript.inlayHints.enumMemberValues.enabled": true,
+    // "typescript.inlayHints.parameterTypes.enabled": true,
+    // "typescript.inlayHints.propertyDeclarationTypes.enabled": true,
+    // "typescript.inlayHints.variableTypes.enabled": true,
+    // "typescript.inlayHints.functionLikeReturnTypes.enabled": true,
+    "terminal.integrated.fontSize": 15,
+    "git.autofetch": true,
+    "git.confirmSync": false,
+    "workbench.startupEditor": "none",
+    "editor.renderWhitespace": "none",
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "always"
+    },
+    "editor.wordBasedSuggestions": "off", // dont show text suggestions
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[json]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "always"
+        },
+        "editor.formatOnSave": true
+    },
+    "[scss]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode",
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        },
+        "editor.formatOnSave": true
+    },
+    "[jsonc]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "typescript.updateImportsOnFileMove.enabled": "always",
+    "typescript.suggest.objectLiteralMethodSnippets.enabled": false,
+    "github.copilot.enable": {
+        "*": true,
+        "plaintext": true,
+        "markdown": true,
+        "scminput": false,
+        "yaml": true,
+        "javascript": true
+    },
+    "eslint.options": {
+        "extensions": [
+            ".ts",
+            ".html"
+        ]
+    },
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "files.watcherExclude": {
+        "**/bin": true
+    },
+    "files.exclude": {
+        "**/obj": true
+    },
+    "editor.cursorBlinking": "phase",
+    // "editor.cursorStyle": "block",
+    "editor.cursorSurroundingLines": 15,
+    // "workbench.colorTheme": "Material Theme High Contrast",
+    "editor.tokenColorCustomizations": {
+        "textMateRules": [
+            {
+                "name": "Function Call",
+                "scope": "variable.function, source meta.function-call entity.name.function, source meta.function-call entity.name.function, source meta.method-call entity.name.function, meta.class meta.group.braces.curly meta.function-call variable.function, meta.class meta.field.declaration meta.function-call entity.name.function, variable.function.constructor, meta.block meta.var.expr meta.function-call entity.name.function, support.function.console, meta.function-call support.function, meta.property.class variable.other.class, punctuation.definition.entity.css",
+                "settings": {
+                    "fontStyle": "italic bold"
+                }
+            },
+            {
+                "name": "Angular event binding",
+                "scope": [
+                    "entity.other.ng-binding-name.event.html",
+                    "meta.ng-binding.event.html"
+                ],
+                "settings": {
+                    "fontStyle": "italic bold",
+                    "foreground": "#0bceaa"
+                    // "foreground": "#4FD6BE"
+                }
+            },
+            {
+                "name": "Angular property binding",
+                "scope": [
+                    "entity.other.ng-binding-name.property.html",
+                    "meta.ng-binding.property.html"
+                ],
+                "settings": {
+                    "fontStyle": "bold"
+                }
+            },
+            {
+                "scope": "keyword.control",
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Angular property binding",
+                "scope": [
+                    "entity.other.ng-binding-name.property.html",
+                    "meta.ng-binding.property.html"
+                ],
+                "settings": {
+                    "foreground": "#2cddf5"
+                }
+            },
+            {
+                "name": "Angular structural directive binding",
+                "scope": [
+                    "entity.other.ng-binding-name.template.html",
+                    "meta.ng-binding.template.html"
+                ],
+                "settings": {
+                    "foreground": "#5def8b",
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "Angular static attribute binding",
+                "scope": [
+                    "entity.other.ng-binding-name.attribute.html",
+                    "entity.other.attribute-name.html",
+                    "meta.ng-binding.attribute.html"
+                ],
+                "settings": {
+                    "foreground": "#93cbfc"
+                }
+            },
+            {
+                "name": "Angular Blocks",
+                "scope": [
+                    "keyword.control.block.transition.ng",
+                    "keyword.control.block.kind.ng"
+                ],
+                "settings": {
+                    "foreground": "#e062ff"
+                }
+            },
+            {
+                "name": "Angular Blocks",
+                "scope": [
+                    "control.block.transition.ng",
+                    "control.block.kind.ng"
+                    // "text.html.derivative"
+                ],
+                "settings": {
+                    "foreground": "#e062ff"
+                }
+            }
+        ]
+    },
+    "workbench.colorCustomizations": {
+        "editorInlayHint.background": "#80dbff07",
+        "editorInlayHint.foreground": "#80dbffd7",
+        "sideBar.border": "#436c6332",
+        "sideBarSectionHeader.border": "#436c6332",
+        // "editor.lineHighlightBorder": "#07414526",
+        "panel.border": "#436c6332"
+    },
+    "search.exclude": {
+        "**/.angular": true
+    },
+    "[css]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "nxConsole.showNodeVersionOnStartup": false,
+    "[html][typescript]": {
+        "editor.codeActionsOnSave": {
+            "source.fixAll.eslint": "explicit"
+        }
+    },
+    "window.zoomLevel": 2,
+    "workbench.activityBar.location": "bottom",
+    "symbols.hidesExplorerArrows": false,
+    "editor.stickyScroll.enabled": false,
+    "git.openRepositoryInParentFolders": "never",
+    "angular.log": "verbose",
+    "angular.trace.server": "verbose",
+    "github.copilot.editor.enableAutoCompletions": true,
+    "editor.minimap.enabled": false,
+    "diffEditor.ignoreTrimWhitespace": false,
+    "supermaven.enable": {
+        "*": true
+    },
+    "window.customTitleBarVisibility": "windowed",
+    "eslint.useFlatConfig": true,
+    "workbench.iconTheme": "symbols",
+    "githubPullRequests.pullBranch": "never",
+    "workbench.colorTheme": "Default Dark Modern"
+}
